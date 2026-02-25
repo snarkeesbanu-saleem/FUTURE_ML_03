@@ -32,8 +32,22 @@ Full results saved in `candidate_ranking.csv`
 - NLP: spaCy (en_core_web_sm)
 - Similarity: TF-IDF + cosine
 
-## Note
-- Scores are low due to mixed job description (ML + design + financial). Real use case would use focused JD.
-- Experience detection is heuristic — can be improved with better date parsing.
+# FUTURE_ML_03 – AI Resume Screening & Candidate Ranking System
 
-Built for Future Interns ML Internship – Task 3
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![spaCy](https://img.shields.io/badge/spaCy-NLP-09A3D5?style=for-the-badge&logo=spacy&logoColor=white)](https://spacy.io/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![pdfplumber](https://img.shields.io/badge/pdfplumber-PDF-FF6F00?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white)](https://github.com/jsvine/pdfplumber)
+[![python-docx](https://img.shields.io/badge/python--docx-DOCX-2B579A?style=for-the-badge&logo=microsoft-word&logoColor=white)](https://python-docx.readthedocs.io/)
+
+
+
+An intelligent, end-to-end **resume screening and candidate ranking system** that helps recruiters quickly identify the best-fit candidates by:
+- Parsing resumes in multiple formats (.docx, .pdf, .txt)
+- Extracting key information (skills, estimated experience years, education level)
+- Matching against a job description using TF-IDF + cosine similarity
+- Computing a weighted final score (skills 60%, experience 25%, education 15%)
+- Ranking candidates with explainable results
+
+Built with Python, spaCy, pdfplumber, python-docx, scikit-learn, and Streamlit.
